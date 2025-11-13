@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Stop-Process:*)",
+      "mcp__sequential-thinking__sequentialthinking",
+      "mcp__tavily__tavily-extract",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:www.sciencedirect.com)",
+      "mcp__tavily__tavily-search",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:www.scirp.org)",
+      "WebFetch(domain:docs.tavily.com)",
+      "mcp__serena__write_memory",
+      "mcp__serena__list_dir",
+      "mcp__serena__get_current_config",
+      "mcp__serena__think_about_collected_information",
+      "mcp__serena__get_symbols_overview",
+      "WebFetch(domain:pythonhosted.org)",
+      "mcp__serena__activate_project"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "outputStyle": "default"
+}
