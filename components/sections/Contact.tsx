@@ -43,7 +43,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-linear-to-b from-telkomsel-red/5 to-background">
+    <section id="contact" className="py-20 bg-linear-to-b from-telkomsel-red-50 to-background">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -57,7 +57,7 @@ export default function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="border-telkomsel-red/20 shadow-2xl">
+          <Card className="border-telkomsel-red-200 shadow-2xl">
             <CardHeader>
               <CardTitle className="text-2xl font-bold text-foreground">
                 Send a Message
@@ -83,7 +83,7 @@ export default function ContactSection() {
                         value={formData.name}
                         onChange={handleInputChange}
                         placeholder="Your Name"
-                        className="border-telkomsel-red/20 focus:border-telkomsel-red transition-colors duration-300"
+                        className="border-telkomsel-red-200 focus:border-telkomsel-red transition-colors duration-300"
                       />
                     </div>
 
@@ -99,7 +99,7 @@ export default function ContactSection() {
                         value={formData.email}
                         onChange={handleInputChange}
                         placeholder="your.email@example.com"
-                        className="border-telkomsel-red/20 focus:border-telkomsel-red transition-colors duration-300"
+                        className="border-telkomsel-red-200 focus:border-telkomsel-red transition-colors duration-300"
                       />
                     </div>
                   </div>
@@ -116,7 +116,7 @@ export default function ContactSection() {
                       value={formData.subject}
                       onChange={handleInputChange}
                       placeholder="Internship Opportunity / Collaboration"
-                      className="border-telkomsel-red/20 focus:border-telkomsel-red transition-colors duration-300"
+                      className="border-telkomsel-red-200 focus:border-telkomsel-red transition-colors duration-300"
                     />
                   </div>
 
@@ -132,7 +132,7 @@ export default function ContactSection() {
                       value={formData.message}
                       onChange={handleInputChange}
                       placeholder="Tell me about your opportunity or project..."
-                      className="border-telkomsel-red/20 focus:border-telkomsel-red resize-none transition-colors duration-300"
+                      className="border-telkomsel-red-200 focus:border-telkomsel-red resize-none transition-colors duration-300"
                     />
                   </div>
 
@@ -171,7 +171,7 @@ export default function ContactSection() {
           {/* Contact Information */}
           <div className="space-y-6">
             {/* Personal Info Card */}
-            <Card className="border-telkomsel-red/20">
+            <Card className="border-telkomsel-red-200">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-foreground">
                   Contact Information
@@ -184,7 +184,7 @@ export default function ContactSection() {
               <CardContent className="space-y-6">
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-telkomsel-red/10 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-telkomsel-red-100 rounded-lg flex items-center justify-center">
                       <Mail className="h-5 w-5 text-telkomsel-red" />
                     </div>
                     <div>
@@ -199,7 +199,7 @@ export default function ContactSection() {
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-telkomsel-red/10 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-telkomsel-red-100 rounded-lg flex items-center justify-center">
                       <Phone className="h-5 w-5 text-telkomsel-red" />
                     </div>
                     <div>
@@ -214,7 +214,7 @@ export default function ContactSection() {
                   </div>
 
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-telkomsel-red/10 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-telkomsel-red-100 rounded-lg flex items-center justify-center">
                       <MapPin className="h-5 w-5 text-telkomsel-red" />
                     </div>
                     <div>
@@ -224,7 +224,7 @@ export default function ContactSection() {
                   </div>
                 </div>
 
-                <Separator className="bg-telkomsel-red/20" />
+                <Separator className="bg-telkomsel-red-200" />
 
                 {/* Social Links */}
                 <div>

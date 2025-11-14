@@ -12,7 +12,7 @@ export default function ProjectsSection() {
   const otherProjects = projects.filter(p => !p.featured);
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-background via-telkomsel-red/5 to-background">
+    <section id="projects" className="py-20 bg-gradient-to-b from-background via-telkomsel-red-50 to-background">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -27,13 +27,13 @@ export default function ProjectsSection() {
         {/* Featured Project - OMR System */}
         {featuredProject && (
           <div className="mb-16">
-            <Card className="overflow-hidden border-telkomsel-red/20 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+            <Card className="overflow-hidden border-telkomsel-red-200 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
               <div className="relative">
                 {/* Project Image Placeholder */}
-                <div className="h-80 bg-gradient-to-br from-telkomsel-red/10 to-innovation-blue/10 flex items-center justify-center relative overflow-hidden">
+                <div className="h-80 bg-gradient-to-br from-telkomsel-red-100 to-innovation-blue-100 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0 bg-grid-telkomsel-red opacity-3 bg-[size:20px_20px]" />
                   <div className="relative z-10 text-center">
-                    <div className="w-24 h-24 bg-telkomsel-red/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                    <div className="w-24 h-24 bg-telkomsel-red-200 rounded-2xl flex items-center justify-center mx-auto mb-4">
                       <Award className="h-12 w-12 text-telkomsel-red" />
                     </div>
                     <h3 className="text-3xl font-bold text-telkomsel-red mb-2">
@@ -45,8 +45,8 @@ export default function ProjectsSection() {
                   </div>
 
                   {/* Floating Elements */}
-                  <div className="absolute top-10 right-10 w-16 h-16 bg-innovation-blue/20 rounded-full blur-xl animate-float" />
-                  <div className="absolute bottom-10 left-10 w-20 h-20 bg-tech-green/20 rounded-full blur-xl animate-float-delay" />
+                  <div className="absolute top-10 right-10 w-16 h-16 bg-innovation-blue-200 rounded-full blur-xl animate-float" />
+                  <div className="absolute bottom-10 left-10 w-20 h-20 bg-tech-green-200 rounded-full blur-xl animate-float-delay" />
                 </div>
               </div>
 
@@ -89,7 +89,7 @@ export default function ProjectsSection() {
                           <Badge
                             key={index}
                             variant="outline"
-                            className="border-telkomsel-red/30 text-telkomsel-red hover:bg-telkomsel-red hover:text-white transition-colors duration-300"
+                            className="border-telkomsel-red-300 text-telkomsel-red hover:bg-telkomsel-red hover:text-white transition-colors duration-300"
                           >
                             {tech}
                           </Badge>
@@ -99,11 +99,11 @@ export default function ProjectsSection() {
 
                     {/* Project Stats */}
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-telkomsel-red/10 rounded-lg p-4 text-center">
+                      <div className="bg-telkomsel-red-100 rounded-lg p-4 text-center">
                         <div className="text-2xl font-bold text-telkomsel-red">95%+</div>
                         <div className="text-sm text-muted-foreground">Accuracy</div>
                       </div>
-                      <div className="bg-innovation-blue/10 rounded-lg p-4 text-center">
+                      <div className="bg-innovation-blue-100 rounded-lg p-4 text-center">
                         <div className="text-2xl font-bold text-innovation-blue">5x</div>
                         <div className="text-sm text-muted-foreground">Faster</div>
                       </div>
@@ -111,7 +111,7 @@ export default function ProjectsSection() {
                   </div>
                 </div>
 
-                <Separator className="my-6 bg-telkomsel-red/20" />
+                <Separator className="my-6 bg-telkomsel-red-200" />
 
                 {/* Action Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -154,11 +154,11 @@ export default function ProjectsSection() {
               {otherProjects.map((project, index) => (
                 <Card
                   key={project.id}
-                  className="group overflow-hidden border-border hover:border-telkomsel-red/30 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                  className="group overflow-hidden border-border hover:border-telkomsel-red-300 transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
                   style={{ animationDelay: `${index * 200}ms` }}
                 >
                   <CardHeader className="relative">
-                    <div className="h-40 bg-gradient-to-br from-telkomsel-red/5 to-innovation-blue/5 rounded-lg flex items-center justify-center mb-4">
+                    <div className="h-40 bg-gradient-to-br from-telkomsel-red-50 to-innovation-blue-50 rounded-lg flex items-center justify-center mb-4">
                       <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center">
                         <Clock className="h-8 w-8 text-muted-foreground" />
                       </div>
@@ -208,7 +208,7 @@ export default function ProjectsSection() {
                         <Button
                           variant="outline"
                           size="sm"
-                          className="flex-1 border-telkomsel-red/30 text-telkomsel-red hover:bg-telkomsel-red hover:text-white transition-colors duration-300"
+                          className="flex-1 border-telkomsel-red-300 text-telkomsel-red hover:bg-telkomsel-red hover:text-white transition-colors duration-300"
                           onClick={() => window.open(project.githubUrl!, '_blank')}
                         >
                           <Github className="h-4 w-4" />

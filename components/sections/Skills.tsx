@@ -17,7 +17,7 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="py-20 bg-linear-to-b from-background to-telkomsel-red/5"
+      className="py-20 bg-linear-to-b from-background to-telkomsel-red-50"
     >
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
@@ -33,7 +33,7 @@ export default function SkillsSection() {
 
         {/* Skills Categories */}
         <Tabs defaultValue="primary" className="w-full max-w-4xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 bg-telkomsel-red/10 border border-telkomsel-red/20">
+          <TabsList className="grid w-full grid-cols-2 bg-telkomsel-red-100 border border-telkomsel-red-200">
             <TabsTrigger
               value="primary"
               className="data-[state=active]:bg-telkomsel-red data-[state=active]:text-white transition-colors duration-300"
@@ -56,7 +56,7 @@ export default function SkillsSection() {
               {skills.primary.map((skill, index) => (
                 <Card
                   key={skill.name}
-                  className="border-border hover:border-telkomsel-red/30 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
+                  className="border-border hover:border-telkomsel-red-300 transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CardHeader className="pb-3">
@@ -71,7 +71,7 @@ export default function SkillsSection() {
                         >
                           {skill.level}%
                         </Badge>
-                        <div className="w-8 h-8 bg-telkomsel-red/10 rounded-lg flex items-center justify-center group-hover:bg-telkomsel-red group-hover:text-white transition-colors duration-300">
+                        <div className="w-8 h-8 bg-telkomsel-red-100 rounded-lg flex items-center justify-center group-hover:bg-telkomsel-red group-hover:text-white transition-colors duration-300">
                           {skill.name === "Next.js" && (
                             <Code className="h-4 w-4" />
                           )}
@@ -102,7 +102,7 @@ export default function SkillsSection() {
                       </div>
                       <Progress
                         value={skill.level}
-                        className="h-2 bg-telkomsel-red/20"
+                        className="h-2 bg-telkomsel-red-200"
                         // Add custom progress indicator color
                         style={{
                           background: `linear-gradient(to right, #e32636 0%, #e32636 ${skill.level}%, #f1f5f9 ${skill.level}%, #f1f5f9 100%)`,
@@ -165,7 +165,7 @@ export default function SkillsSection() {
                     <div className="space-y-1">
                       <Progress
                         value={skill.level}
-                        className="h-1 bg-telkomsel-red/20"
+                        className="h-1 bg-telkomsel-red-200"
                       />
                     </div>
 
@@ -181,7 +181,7 @@ export default function SkillsSection() {
 
         {/* Innovation Mindset Section */}
         <div className="mt-16 text-center">
-          <div className="bg-linear-to-r from-telkomsel-red/10 to-innovation-blue/10 rounded-2xl p-8 border border-telkomsel-red/20">
+          <div className="bg-linear-to-r from-telkomsel-red-100 to-innovation-blue-100 rounded-2xl p-8 border border-telkomsel-red-200">
             <div className="flex items-center justify-center mb-4">
               <div className="w-16 h-16 bg-telkomsel-red rounded-full flex items-center justify-center">
                 <Target className="h-8 w-8 text-white" />

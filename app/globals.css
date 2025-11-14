@@ -63,18 +63,54 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Custom Telkomsel Colors */
-  --color-telkomsel-red: #e32636;
-  --color-telkomsel-dark-red: #b71c1c;
-  --color-telkomsel-light-red: #ff5252;
-  --color-corporate-gray: #2e3440;
-  --color-light-gray: #eceff4;
-  --color-accent-gray: #4c566a;
-  --color-innovation-blue: #5e81ac;
-  --color-tech-green: #88c0d0;
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f8fafc;
-  --color-bg-accent: #f1f5f9;
+  /* Telkomsel Red Colors - OKLCH Format with Variants */
+  --color-telkomsel-red: oklch(0.55 0.22 27.33);
+  --color-telkomsel-red-50: oklch(0.98 0.02 27.33);
+  --color-telkomsel-red-100: oklch(0.94 0.04 27.33);
+  --color-telkomsel-red-200: oklch(0.88 0.08 27.33);
+  --color-telkomsel-red-300: oklch(0.78 0.12 27.33);
+  --color-telkomsel-red-400: oklch(0.68 0.16 27.33);
+  --color-telkomsel-red-500: oklch(0.58 0.20 27.33);
+  --color-telkomsel-red-600: oklch(0.48 0.18 27.33);
+  --color-telkomsel-red-700: oklch(0.38 0.16 27.33);
+  --color-telkomsel-red-800: oklch(0.28 0.12 27.33);
+  --color-telkomsel-red-900: oklch(0.18 0.08 27.33);
+
+  /* Innovation Blue Colors - OKLCH Format with Variants */
+  --color-innovation-blue: oklch(0.53 0.08 250.15);
+  --color-innovation-blue-50: oklch(0.98 0.01 250.15);
+  --color-innovation-blue-100: oklch(0.94 0.02 250.15);
+  --color-innovation-blue-200: oklch(0.88 0.04 250.15);
+  --color-innovation-blue-300: oklch(0.78 0.06 250.15);
+  --color-innovation-blue-400: oklch(0.68 0.07 250.15);
+  --color-innovation-blue-500: oklch(0.58 0.08 250.15);
+  --color-innovation-blue-600: oklch(0.48 0.07 250.15);
+  --color-innovation-blue-700: oklch(0.38 0.06 250.15);
+  --color-innovation-blue-800: oklch(0.28 0.04 250.15);
+  --color-innovation-blue-900: oklch(0.18 0.02 250.15);
+
+  /* Tech Green Colors - OKLCH Format with Variants */
+  --color-tech-green: oklch(0.73 0.07 200.65);
+  --color-tech-green-50: oklch(0.98 0.01 200.65);
+  --color-tech-green-100: oklch(0.94 0.02 200.65);
+  --color-tech-green-200: oklch(0.88 0.03 200.65);
+  --color-tech-green-300: oklch(0.78 0.05 200.65);
+  --color-tech-green-400: oklch(0.68 0.06 200.65);
+  --color-tech-green-500: oklch(0.58 0.07 200.65);
+  --color-tech-green-600: oklch(0.48 0.06 200.65);
+  --color-tech-green-700: oklch(0.38 0.05 200.65);
+  --color-tech-green-800: oklch(0.28 0.03 200.65);
+  --color-tech-green-900: oklch(0.18 0.02 200.65);
+
+  /* Legacy Color Support */
+  --color-telkomsel-dark-red: oklch(0.35 0.18 27.33);
+  --color-telkomsel-light-red: oklch(0.65 0.24 27.33);
+  --color-corporate-gray: oklch(0.21 0.02 250.15);
+  --color-light-gray: oklch(0.89 0.01 250.15);
+  --color-accent-gray: oklch(0.42 0.03 250.15);
+  --color-bg-primary: oklch(1 0 0);
+  --color-bg-secondary: oklch(0.98 0.01 250.15);
+  --color-bg-accent: oklch(0.94 0.02 250.15);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);

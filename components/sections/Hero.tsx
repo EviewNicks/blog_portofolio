@@ -10,24 +10,27 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-telkomsel-red/5"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-telkomsel-red-50"
     >
       {/* Background Animation */}
       <div className="absolute inset-0 bg-grid-white opacity-3 bg-[size:50px_50px]" />
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-[600px] h-[600px] bg-telkomsel-red/10 rounded-full blur-3xl animate-pulse" />
+        <div className="w-[600px] h-[600px] bg-telkomsel-red-100 rounded-full blur-3xl animate-pulse" />
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-innovation-blue/20 rounded-full blur-xl animate-float" />
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-tech-green/20 rounded-full blur-xl animate-float-delay" />
+      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full blur-xl animate-float" />
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-tech-green-200 rounded-full blur-xl animate-float-delay" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         {/* Avatar Section */}
         <div className="mb-8 animate-fade-in">
           <div className="relative inline-block">
             <Avatar className="w-32 h-32 border-4 border-telkomsel-red shadow-xl transform hover:scale-105 transition-all duration-300">
-              <AvatarImage src={personalInfo.avatar} alt={personalInfo.name} />
+              <AvatarImage
+                src={personalInfo.location}
+                alt={personalInfo.name}
+              />
               <AvatarFallback className="bg-telkomsel-red text-white text-2xl font-bold">
                 {personalInfo.name
                   .split(" ")
