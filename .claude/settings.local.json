@@ -17,7 +17,10 @@
       "mcp__serena__think_about_collected_information",
       "mcp__serena__get_symbols_overview",
       "WebFetch(domain:pythonhosted.org)",
-      "mcp__serena__activate_project"
+      "mcp__serena__activate_project",
+      "mcp__context7__resolve-library-id",
+      "mcp__serena__onboarding",
+      "mcp__serena__initial_instructions"
     ],
     "deny": [],
     "ask": []

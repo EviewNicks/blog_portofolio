@@ -1,0 +1,14 @@
+[
+  {
+    "session_id": "011d3b35-e5f6-4905-862a-edf4ed747b20",
+    "blocked_command": "cd \"D:\\2-Project\\blog_portofolio\" && npm install framer-motion react-icons react-hook-form @hookform/resolvers zod lucide-react",
+    "suggested_command": "cd \"D:\\2-Project\\blog_portofolio\" && yarn install framer-motion react-icons react-hook-form @hookform/resolvers zod lucide-react",
+    "reason": "Gunakan 'yarn install' sebagai pengganti 'npm install'."
+  },
+  {
+    "session_id": "011d3b35-e5f6-4905-862a-edf4ed747b20",
+    "blocked_command": "cd \"D:\\2-Project\\blog_portofolio\" && npm install framer-motion react-icons react-hook-form @hookform/resolvers zod lucide-react",
+    "suggested_command": "cd \"D:\\2-Project\\blog_portofolio\" && yarn install framer-motion react-icons react-hook-form @hookform/resolvers zod lucide-react",
+    "reason": "Gunakan 'yarn install' sebagai pengganti 'npm install'."
+  }
+]
