@@ -518,3 +518,48 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Image Fallback Styles */
+.fallback-hidden {
+  display: none;
+}
+
+.fallback-active .fallback-hidden {
+  display: none;
+}
+
+.fallback-active {
+  position: relative;
+}
+
+.fallback-active::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(227, 38, 54, 0.05) 0%,
+    rgba(94, 129, 172, 0.05) 50%,
+    rgba(136, 192, 208, 0.05) 100%);
+  border-radius: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project Image Container */
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg,
+    var(--telkomsel-red) 0%,
+    var(--innovation-blue) 100%);
+}
+
+.project-image-container img {
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.project-image-container:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
